@@ -5,10 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="backgroundImage">
+            <img src="./images/illustration-sign-up-mobile.svg" alt="Illustration Sign Up">
+        </div>
+
+        <div class="wordCard">
+            <h1 class="h1TextStyle">Stay upted!</h1>
+            <p class="paragraphTextStyle" style="margin-top: 24px;">Join 60,000+ product managers receiving monthly
+                updates on;</p>
+
+            <div style="margin-top: 24px;" class="successTexts">
+                <img src="./images/icon-success.svg" alt="Success Icon">
+                <p class="paragraphTextStyle">Product discovery and building what matters</p>
+            </div>
+
+            <div class="successTexts">
+                <img src="./images/icon-success.svg" alt="Success Icon">
+                <p class="paragraphTextStyle">Measuring to ensure updates are a success</p>
+            </div>
+
+            <div class="successTexts">
+                <img src="./images/icon-success.svg" alt="Success Icon">
+                <p class="paragraphTextStyle">And much more!</p>
+            </div>
+
+            <div class="emailAndSubmitButton">
+                <form id="newsletterForm">
+                    <div class="labelContainer">
+                        <label for="email" class="buttonTextStyle" style="color: hsl(234, 29%, 20%);">Email
+                            address</label>
+                        <span id="errorMessage" class="errorMessageStyle">Valid email required</span>
+                    </div>
+
+                    <input id="emailInput" placeholder="email@company.com" class="emailBorder" type="text">
+
+                    <button type="submit" class="submitButton">
+                        <p class="buttonTextStyle">Subscribe to monthly newsletter</p>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
