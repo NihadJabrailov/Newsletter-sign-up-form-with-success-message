@@ -1,0 +1,141 @@
+/* Buradan xəttlənən hissəyə qədər ümumi style kodları daxildir.*/
+:root {
+    --h1-font-and-button-color: hsl(234, 29%, 20%);
+    --email-text-color: hsl(0, 0%, 58%);
+    --paragraph-text-color: hsl(235, 18%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --button-hover-color: hsl(4, 100%, 67%);
+    --error-text-and-error-border-color: hsl(4, 100%, 67%);
+    --error-background-color: hsl(6, 43%, 70%);
+}
+
+.h1TextStyle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--h1-font-and-button-color);
+}
+
+.paragraphTextStyle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--paragraph-text-color);
+}
+
+.emailTextStyle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--email-text-color);
+}
+
+.buttonTextStyle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    color: var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------------------------------------------------*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backgroundImage {
+    width: 100%;
+}
+
+.backgroundImage img {
+    width: 100%;
+    display: block;
+}
+
+.wordCard {
+    width: 100%;
+    height: 100%;
+    padding-right: 38px;
+    padding-left: 24px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.successTexts {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 16px;
+}
+
+.successTexts img {
+    width: 24px;
+    height: 24px;
+}
+
+.emailBorder {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--h1-font-and-button-color);
+    padding: 0 24px;
+    outline: none;
+}
+
+.emailAndSubmitButton {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.emailAndSubmitButton form {
+    width: 100%;
+}
+
+.submitButton {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    background: var(--h1-font-and-button-color);
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background: var(--button-hover-color);
+    cursor: pointer;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.errorMessageStyle {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--error-text-and-error-border-color);
+    display: none;
+}
+
+
+.emailBorder.error {
+    border-color: var(--error-text-and-error-border-color);
+    background-color: hsl(4, 100%, 95%);
+    color: var(--error-text-and-error-border-color);
+}
