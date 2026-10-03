@@ -13,48 +13,69 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="backgroundImage">
-            <img src="./images/illustration-sign-up-mobile.svg" alt="Illustration Sign Up">
+    <div class="pageWrapper">
+        <div class="container" id="mainContainer">
+            <div class="wordCard">
+                <h1 class="h1TextStyle">Stay updated!</h1>
+                <p class="paragraphTextStyle" style="margin-top: 24px;">Join 60,000+ product managers receiving monthly
+                    updates on;</p>
+
+                <div style="margin-top: 24px;" class="successTexts">
+                    <img src="./images/icon-success.svg" alt="Success Icon">
+                    <p class="paragraphTextStyle">Product discovery and building what matters</p>
+                </div>
+
+                <div class="successTexts">
+                    <img src="./images/icon-success.svg" alt="Success Icon">
+                    <p class="paragraphTextStyle">Measuring to ensure updates are a success</p>
+                </div>
+
+                <div class="successTexts">
+                    <img src="./images/icon-success.svg" alt="Success Icon">
+                    <p class="paragraphTextStyle">And much more!</p>
+                </div>
+
+                <div class="emailAndSubmitButton">
+                    <form id="newsletterForm">
+                        <div class="labelContainer">
+                            <label for="email" class="buttonTextStyle" style="color: hsl(234, 29%, 20%);">Email
+                                address</label>
+                            <span id="errorMessage" class="errorMessageStyle">Valid email required</span>
+                        </div>
+
+                        <input id="emailInput" placeholder="email@company.com" class="emailBorder" type="text">
+
+                        <button type="submit" class="submitButton">
+                            <p class="buttonTextStyle">Subscribe to monthly newsletter</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="backgroundImage">
+                <img id="illustrationImg" src="./images/illustration-sign-up-mobile.svg" alt="Illustration Sign Up">
+            </div>
         </div>
 
-        <div class="wordCard">
-            <h1 class="h1TextStyle">Stay upted!</h1>
-            <p class="paragraphTextStyle" style="margin-top: 24px;">Join 60,000+ product managers receiving monthly
-                updates on;</p>
+        <div class="successContainer hidden" id="successContainer">
+            <img class="successIconBig" src="./images/icon-success.svg" alt="Success Icon">
+            <h1 class="h1TextStyle" style="margin-bottom: 24px;">Thanks for subscribing!</h1>
+            <p class="paragraphTextStyle">A confirmation email has been sent to <span id="userEmail" class="paragraphTextStyle" style="font-weight: 700;"></span>. Please open it and click the button inside to confirm your subscription.</p>
 
-            <div style="margin-top: 24px;" class="successTexts">
-                <img src="./images/icon-success.svg" alt="Success Icon">
-                <p class="paragraphTextStyle">Product discovery and building what matters</p>
-            </div>
-
-            <div class="successTexts">
-                <img src="./images/icon-success.svg" alt="Success Icon">
-                <p class="paragraphTextStyle">Measuring to ensure updates are a success</p>
-            </div>
-
-            <div class="successTexts">
-                <img src="./images/icon-success.svg" alt="Success Icon">
-                <p class="paragraphTextStyle">And much more!</p>
-            </div>
-
-            <div class="emailAndSubmitButton">
-                <form id="newsletterForm">
-                    <div class="labelContainer">
-                        <label for="email" class="buttonTextStyle" style="color: hsl(234, 29%, 20%);">Email
-                            address</label>
-                        <span id="errorMessage" class="errorMessageStyle">Valid email required</span>
-                    </div>
-
-                    <input id="emailInput" placeholder="email@company.com" class="emailBorder" type="text">
-
-                    <button type="submit" class="submitButton">
-                        <p class="buttonTextStyle">Subscribe to monthly newsletter</p>
-                    </button>
-                </form>
-
-            </div>
+            <button id="dismissButton" type="button" class="submitButton" style="margin-top: auto; margin-bottom: 0;">
+                <p class="buttonTextStyle">Dismiss message</p>
+            </button>
         </div>
+    </div>
+
+    <div class="successContainer hidden" id="successContainer">
+        <img class="successIconBig" src="./images/icon-success.svg" alt="Success Icon">
+        <h1 class="h1TextStyle" style="margin-bottom: 24px;">Thanks for subscribing!</h1>
+        <p class="paragraphTextStyle">A confirmation email has been sent to <span id="userEmail" class="paragraphTextStyle" style="font-weight: 700;"></span>. Please open it and click the button inside to confirm your subscription.</p>
+
+        <button id="dismissButton" type="button" class="submitButton" style="margin-top: 222px; margin-bottom: 32px;">
+            <p class="buttonTextStyle">Dismiss message</p>
+        </button>
     </div>
 
     <script src="script.js"></script>
